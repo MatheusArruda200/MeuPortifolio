@@ -1,0 +1,65 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top right, #020e19, #00588c);
+    color: #fff;
+    flex-direction: column;
+}
+
+.container>h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5em;
+}
+
+.container>h2 {
+    font-family: 'Roboto', sans-serif;
+    margin: -50px 0px 0px 180px;
+
+}
+
+main {
+    text-align: center;
+    background-color: #ffffff;
+    color: black;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    width: auto;
+}
+
+.img1,
+.img2,
+.img3 {
+    margin: 0 15px 0 15px;
+}
+
+.linkedin,
+.github {
+    margin: 10px 5px 5px 5px;
+    width: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+    .container>h1 {
+        font-size: 3em;
+    }
+
+    .container>h2 {
+        font-size: 80%;
+    }
+
+    main {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 250px;
+    }
+}
