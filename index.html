@@ -1,40 +1,145 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+    <!DOCTYPE html>
+    <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portifólio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="assets/estilo/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Portifólio</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!--Bootstrap Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- CSS do projeto -->
+        <link rel="stylesheet" href="assets/estilo/style.css">
+        <!--JavaScript Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </head>
 
-<body>
-    <header>
-        <section class="container">
-            <h1>Frontend <br>&nbsp;&nbsp; Devolper. </a></h1>
-            <h2>Eu sou o Matheus Arruda, tenho 27 anos.</h2>
-        </section>
-    </header>
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+                <a href="#" class="class navbar-brand primary-color">
+                    <img src="assets/img/IMG_20240316_193008741.png" alt="Foto">
+                </a>
+                <span>&lt; Frontend <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Devolper &gt;</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
 
-    <main>
-        <section class="parte2">
-            <h2>Este é meu portifólio</h2>
-            <h3>Aqui você irá encontrar meus projetos.</h3>
-            <img class="img1" src="assets/favicon_io/android-chrome-192x192.png">
-            <img class="img2" src="assets/favicon_io/android-chrome-192x192.png" alt="projetos">
-            <img class="img3" src="assets/favicon_io/android-chrome-192x192.png" alt="projetos">
-        </section>
-    </main>
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-2-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link  primary-color" aria-current="page">&lt; &nbsp; &nbsp; HOME &nbsp; &nbsp; &gt; </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#slider-container" class="nav-link  primary-color">&lt; &nbsp; &nbsp; PROJECTS &nbsp; &nbsp; &gt;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color">&lt; &nbsp; &nbsp; 
+                                ABOUT ME &nbsp; &nbsp; &gt;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#footer" class="nav-link primary-color">&lt; &nbsp; &nbsp; 
+                                CONTACTS &nbsp; &nbsp; &gt;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+  <!--Slide-->
+
+        <div class=" col-md-6 container" id="slider-container">
+            <div class="carousel slide" id="slider" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="-true"
+                        aria-label="Slide 1">
+                    </button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2">
+                    </button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/android-chrome-512x512.png" alt="img1" class="d-block w-100 " id="slide-img">
+                        <div class="carousel-caption">
+                            <h5 class="secondary-color">Projetos</h5>
+                            <a href="#" class="btn btn-dark">Ver projetos</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/android-chrome-512x512.png" alt="img2" class="d-block w-100" id="slide-img">
+                        <div class="carousel-caption">
+                            <h5 class="secondary-color">Projetos</h5>
+                            <a href="#" class="btn btn-dark">Ver projetos</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/android-chrome-512x512.png" alt="img3" class="d-block w-100" id="slide-img">
+                        <div class="carousel-caption">
+                            <h5 class="secondary-color">Projetos</h5>
+                            <a href="#" class="btn btn-dark">Ver projetos</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                    <i class="bi-chevron-compact-left"></i>
+                    <span class="visually-hydden"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                    <i class="bi-chevron-compact-right"></i>
+                    <span class="visually-hydden"></span>
+                </button>
+            </div>
+        </div>
 
 
-    <footer><a href="https://www.linkedin.com/in/matheus-arruda-881b43162/" target="_blank"><img
-                src="assets/favicon_io/linkedin.png" alt="linkedin" class="linkedin"></a> <a
-            href="https://github.com/MatheusArruda200" target="_blank"><img src="assets/favicon_io/github-logo.png"
-                alt="github" class="github"></footer>
 
 
-    <script src="assets/js/index.js"></script>
-</body>
 
-</html>
+
+
+    <!--FOOTER-->
+    <div class="footer container-fluid bg-dark-color" id="footer">
+        <div class="container">
+            <div class="row">
+                <!--FOOTER TOP-->
+                
+                <!--FOOTER DETAILS-->
+                <div id="footer-details">
+                    <div class="row justify-content-between">
+                        <div id="contact-container">
+                            <h4>Formas de contato</h4>
+                            <p class="primary-color">(81)99501-2029</p>
+                            <p class="primary-color">arrudadevs@gmail.com</p>
+                            <div class="col-12" id="footer-top">
+                                <div class="row justify-content-between">
+                                    <div class="" id="social-icons">
+                                        <a href="https://www.linkedin.com/in/matheus-arruda-881b43162/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                        <a href="https://wa.me/+5581995012029" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                                        <a href="https://github.com/MatheusArruda200" target="_blank"><i class="bi bi-github"></i></a>
+                                        <a href="https://www.instagram.com/arruda_mt/" target="_blank"><i class="bi bi-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FOOTER BOTTOM-->
+                <div class="col-12" id="footer-bottom">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-3">
+                            <p class="primary-color"> Matheus Arruda &copy;</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script src="assets/js/index.js"></script>
+    </body>
+
+    </html>
